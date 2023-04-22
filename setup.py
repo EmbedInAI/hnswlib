@@ -8,7 +8,7 @@ import setuptools
 from setuptools import Extension, setup
 from setuptools.command.build_ext import build_ext
 
-__version__ = '0.7.0'
+__version__ = '0.7.1'
 
 
 include_dirs = [
@@ -114,11 +114,11 @@ class BuildExt(build_ext):
 
 
 setup(
-    name='hnswlib',
+    name='hnswlib-embedinai',
     version=__version__,
     description='hnswlib',
     author='Yury Malkov and others',
-    url='https://github.com/yurymalkov/hnsw',
+    url='https://github.com/EmbedInAI/hnswlib',
     long_description="""hnsw""",
     ext_modules=ext_modules,
     install_requires=['numpy'],
